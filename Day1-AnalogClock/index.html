@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div id="clockContainer">
+        <div id="circle"></div>
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    
+    <div id="date">Fri 7</div>
+    
+    <script>
+        let currDay = new Date().getDate();
+        let currWeekDay = new Date().getDay();
+
+        if (currWeekDay === 7) currWeekDay = "Sun";
+        if (currWeekDay === 1) currWeekDay = "Mon";
+        if (currWeekDay === 2) currWeekDay = "Tue";
+        if (currWeekDay === 3) currWeekDay = "Wed";
+        if (currWeekDay === 4) currWeekDay = "Thu";
+        if (currWeekDay === 5) currWeekDay = "Fri";
+        if (currWeekDay === 6) currWeekDay = "Sat";
+
+        document.getElementById("date").innerHTML = `${currDay} ${currWeekDay}`;
+
+    </script>
+
+
+</div>
+    
+</body>
+</html>
