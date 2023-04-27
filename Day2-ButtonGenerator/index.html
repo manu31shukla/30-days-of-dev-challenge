@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<main><div class="title">
+
+   <center> <h2>Button Generator</h2> </center>
+</div>
+    <div id="container">
+   <form>
+            <input id="generated-button" type="button" value="Default Label">
+            <br><br>
+        
+            <label for="btn-label">Button Label: </label>
+            <input type="text" id="btn-label" name="btn-label" value="Default Label"><br><br>
+        
+        
+            <label for="f-size">Font Size: </label>
+            <input type="number" id="f-size" name="f-size" min="8" max="50" value="16" style="width: 200px;"  required>
+        
+            <label for="f-color">Font Color: </label>
+            <input id="f-color" name="f-color" class="jscolor" value="#000000" required><br><br>
+        
+            <label for="padding-box">Padding Top-Right-Bottom-Left: </label>
+            <input type="number" id="top" class="padding-box" style="width: 70px;" min="0" max="24" value="1" required>-
+            <input type="number" id="right" class="padding-box" style="width: 70px;" min="0" max="48" value="6" required>-
+            <input type="number" id="bottom" class="padding-box" style="width: 70px;" min="0" max="24" value="1" required>-
+            <input type="number" id="left" class="padding-box" style="width: 70px;" min="0" max="48" value="6" required><br><br>
+        
+            <label for="bgcolor">Background Color: </label>
+            <input id="bgcolor" name="bgcolor" class="jscolor"  value="#ffffff" required>
+        
+            <label for="bordercolor">Border Color: </label>
+            <input  id="bordercolor" name="bordercolor" class="jscolor"  value="#000000" required><br><br>
+        
+            <label for="border-width">Border Width: </label>
+            <input type="number" id="border-width" name="border-width" style="width: 200px;" min="0" max="50" value="0" required>
+         
+            <label for="border-radius">Border Radius: </label>
+            <input type="number" id="border-radius" name="border-radius" style="width: 200px;" min="0" max="50" value="0" required><br><br><br>
+        
+        <div class="submit"><a id="generate-code" href="#popup">Generate Code</a></div><br><br><br>
+   </form> 
+
+   
+</div>
+<div id="popup" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <h3>HTML:</h3>
+            <p id="html-code"> html</p>
+        </div>
+        <div>
+            <h3>CSS:</h3>
+            <div id="css-code">
+                css
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>
+
+</body>
+</html>
