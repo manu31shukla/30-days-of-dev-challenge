@@ -5,3 +5,5 @@
 - [Analog Clock](https://644a898ba163880e6324c6f8--leafy-beignet-86013e.netlify.app/)
 
 * [Button Generator](https://remarkable-lokum-8442c8.netlify.app/)
+
++ [Word Counter](https://644bf882f089f60d995d23a6--extraordinary-pixie-1b3043.netlify.app/)
