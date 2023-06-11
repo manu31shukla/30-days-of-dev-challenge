@@ -8,4 +8,4 @@
 
 + [Word Counter](https://644bf882f089f60d995d23a6--extraordinary-pixie-1b3043.netlify.app/)
 
-- [Jungle Shooter]()
+- [Jungle Shooter](https://64863d5d01d60159a28be109--snazzy-starship-151b88.netlify.app/)
