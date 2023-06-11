@@ -1,0 +1,16 @@
+*{
+    background: url("https://www.bing.com/images/search?view=detailV2&ccid=CmyBEx1L&id=3EC47CAFB112A20896579CD85264564D1705D7DC&thid=OIP.CmyBEx1L1oPS_5ldNhAxbAHaEK&mediaurl=https%3A%2F%2Fwww.e-dasa.com%2Fwp-content%2Fuploads%2FLudo-Neo-Classic-678x381.jpg&exph=381&expw=678&q=LUDO+GAME+AESTHETICS&simid=608028831128162343&form=IRPRST&ck=0170B2DDF8CDDECD988FA28A2E4B1BC9&selectedindex=8&ajaxhist=0&ajaxserp=0&vt=0&sim=11");
+}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}

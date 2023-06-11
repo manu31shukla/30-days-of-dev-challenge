@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shooting Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="player">
+      
+    </div>
+    <div id="bullet"></div>
+    <div id="target"></div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <audio id="background-audio" loop>
+    <source src="jungle.mp3" type="audio/mpeg">
+    <source src="jungle.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
+  </audio>
+  <button id="start-button" onclick="startGame()">Start Game (Press Spacebar to shoot)</button>
+  <audio id="bullet-audio" src="bullets.mp3"></audio>
+  <audio id="target-hit-audio">
+    <source src="target-hit.mp3" type="audio/mpeg">
+    <source src="target-hit.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
+  </audio>
+  <audio id="gunshot-audio" src="gunshot.mp3"></audio>
+    <div id="hearts">Lives: <span id="hearts-container">
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+      </span></div>
+    <div id="game-over" class="hide">
+      <h2>Game Over</h2>
+      <p>Would you like to play again or exit the game?</p>
+      <button id="replay-button">Replay</button>
+      <button id="exit-button">Exit</button>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
